@@ -1,0 +1,84 @@
+.logo a {
+  font-size: 1.875rem;      /* text-3xl */
+  font-weight: bold;        /* font-bold */
+  background-color: #8d0023ab; /* bg-blue-600 */
+  color: rgb(255, 255, 255);             /* text-black */
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  border: 1px solid #71717a; /* border-zinc-500 */
+  border-radius: 0.375rem;  /* rounded-md */
+}
+
+/* Responsif untuk layar medium ke atas (md:) */
+@media (min-width: 768px) 
+{
+  .custom-title {
+    background-color: #1e40af; /* md:bg-blue-800 */
+    color: white;  
+}
+}
+
+
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+  border-bottom: 1px solid #364f6b;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991.98px) {
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav .menu ul {
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+  }
+
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+}

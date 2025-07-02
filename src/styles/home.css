@@ -1,0 +1,322 @@
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+a.tbl-biru {
+  background: #3f72af;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #fc5185;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #3f72af;
+  text-decoration: none;
+}
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 700px; 
+  text-align: justify;
+  margin: 0 auto;  
+}
+
+.anda {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 20px;
+    max-width: 1000px; 
+}
+
+.kamu {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 20px;
+    max-width: 1000px; 
+}
+
+.desk {
+    font-size: 30px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #0883f7;
+  text-align: center;
+}
+
+.tool {
+    font-family: "Poppins";
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #5f00f8;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.kolom .deskripsi {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins";
+  color: #fc05fc;
+  text-align: center;
+}
+
+.text{
+    font-family: "Poppins";
+}
+
+.haha {
+  font-family: "comic sans ms";
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+section .kolom1 {
+text-align: Center;
+  width: 100%;     /* rata kanan kiri */
+}
+
+.saya {
+  text-align: center;         /* text-center */
+  font-size: 2.25rem;         /* text-4xl */
+  font-weight: bold;          /* font-bold */
+  margin-bottom: 0.5rem;      /* mb-2 */
+  font-family: "Poppins";
+  color: #fc05fc;
+}
+
+.paragraph {
+  font-size: 1rem;            /* text-base = 16px (default) */           
+  margin-bottom: 2.5rem;     /* mb-10 = 40px */
+  text-align: justify;        /* teks rata kanan kiri */
+  margin: 0 auto;             /* posisi paragraf di tengah secara horizontal */
+  max-width: 900px;           /* lebar paragraf */
+  line-height: 1.8;
+  font-family: "Poppins";           /* jarak antar baris */
+}
+
+.saru {
+margin-bottom: 2.5rem;
+}
+
+.tools-box {
+  margin-top: 3.5rem;          /* mt-14 */
+  display: grid;
+  gap: 1rem;                   /* gap-4 */
+  text-align: center;
+  justify-content: center;
+
+  max-width: 1200px;           /* ✅ batasi lebar maksimal */
+  margin-left: auto;           /* ✅ posisikan horizontal tengah */
+  margin-right: auto;
+  padding: 0 1rem; /* default grid-cols-1 */
+}
+
+@media (min-width: 640px) {
+  .tools-box {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 768px) {
+  .tools-box {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .tools-box {
+    grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+  }
+}
+
+.custom-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 4rem;
+  border: 1px solid #2563eb; /* border-blue-600 */
+  border-radius: 1rem;   /* rounded-md */
+  transition: background-color 0.3s;
+}
+
+.tool-image {
+  width: 60rem;
+  height: auto;
+  display: block;
+  background-color: #27272a;  /* bg-zinc-800 */
+  transition: background-color 0.3s;
+}
+
+.group:hover .tool-image {
+  background-color: #27279b;  /* hover:bg-zinc-900 */
+}
+
+.tool-name {
+  font-weight: bold;
+}
+
+.tool-desc {
+  opacity: 0.5;
+}
+
+/* Bagian Judul Tengah */
+.tengah {
+  text-align: center;
+  margin-bottom: 200rem;
+}
+
+.kolom h2 {
+  font-size: 250rem;
+  color: #1e3a8a;
+}
+
+.kamu {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Partner List *//* Judul & Deskripsi */
+.tengah {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.kolom h2 {
+  font-size: 5rem;
+  color: #1e3a8a;
+}
+
+.kamu {
+  font-size: 2rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.partner-list-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+  justify-items: center;
+}
+
+.kartu-partner {
+  width: 120px;
+  height: 120px;
+  background-color: #f1f5f9;
+  border-radius: 12px; /* ✅ bentuk kotak dengan sudut lembut */
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.kartu-partner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ agar tidak penyok */
+}
+
+.kartu-partner:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+.tools {
+  background-color: #f1f5f9;
+  padding: 4rem 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  margin-bottom: 0.75rem;
+  color: #1e3a8a;
+}
+
+.footer-section p {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
