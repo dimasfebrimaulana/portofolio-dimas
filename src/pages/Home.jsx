@@ -26,7 +26,7 @@ function Home() {
 
  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(()=>{
-getAllData();
+fetchPengunjung();
   },[]);
 
   const fetchPengunjung = async () => {
