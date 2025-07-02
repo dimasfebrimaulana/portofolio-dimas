@@ -24,13 +24,14 @@ function Home() {
   const [pengunjung, setPengunjung] = useState([])
   const [editId, setEditId] = useState(null)
 
-  useEffect(() => {
-    fetchPengunjung()
-  }, [])
+ const API_URL = import.meta.env.VITE_API_URL;
+  useEffect(()=>{
+getAllData();
+  },[]);
 
   const fetchPengunjung = async () => {
     try {
-      const response = await axios.get('https://dimas-backend.onrender.com/pengunjung')
+      const response =await fetch(`${API_URL}/pengunjung`)
       setPengunjung(response.data)
     } catch (error) {
       console.error('Gagal mengambil data:', error)
