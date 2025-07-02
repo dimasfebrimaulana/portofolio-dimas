@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
-import '../styles/Home.css'
 import Footer from '../components/Footer'
 import { homeSection } from '../data/HomeSection'
 import parse from 'html-react-parser'
 import { coursesSection } from '../data/CoursesSection.Jsx'
 import { tutorsSection } from '../data/TutorsSection'
 import { listTools } from '../data'
+import '../styles/Home.css'
 import '../styles/Partners.css'
 import axios from 'axios'
 
