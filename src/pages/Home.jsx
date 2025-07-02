@@ -11,7 +11,7 @@ import '../styles/Partners.css'
 import axios from 'axios'
 
 function Home() {
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     nama: '',
     email: '',
     alamat: '',
@@ -30,7 +30,7 @@ function Home() {
 
   const fetchPengunjung = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/pengunjung')
+      const response = await axios.get('https://dimas-backend.onrender.com/pengunjung')
       setPengunjung(response.data)
     } catch (error) {
       console.error('Gagal mengambil data:', error)
@@ -48,9 +48,9 @@ function Home() {
     e.preventDefault()
     try {
       if (editId) {
-        await axios.put(`http://localhost:8000/pengunjung/${editId}`, formData)
+        await axios.put(`https://dimas-backend.onrender.com/pengunjung/${editId}`, formData)
       } else {
-        await axios.post('http://localhost:8000/pengunjung', formData)
+        await axios.post('https://dimas-backend.onrender.com/pengunjung', formData)
       }
       fetchPengunjung()
       setFormData({
@@ -70,12 +70,13 @@ function Home() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/pengunjung/${id}`)
+      await axios.delete(`https://dimas-backend.onrender.com/pengunjung/${id}`)
       fetchPengunjung()
     } catch (error) {
       console.error('Gagal menghapus data:', error)
     }
   }
+
 
   const handleEdit = (data) => {
     setFormData(data)

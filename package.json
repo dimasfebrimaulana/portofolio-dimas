@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "npx json-server db.json",
+    "server": "https://dimas-backend.onrender.com/",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
